@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discount Calculator</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white px-10">
+  <header class="flex min-h-screen gap-3 flex-col justify-center items-center">
+    <h1 class="text-gray-500 mb-3 fn uppercase text-3xl">Discound calculator</h1>
+      
+    <div class="flex flex-col lg:flex-row gap-3">
+
+    <form class="bg-pink-400 flex flex-col rounded mt-2 p-10 " action="#">
+        <h2 class="text-gray-300 text-2xl font-bold mb-2">Price: $<span id="main-price">1000</span></h2>
+
+        <button id="first-discount" class="bg-yellow-500 hover:bg-yellow-600 cursor-pointer rounded mt-2 p-2 px-4">Apply 30% off</button>
+        
+        <h3  class="text-red-600 bg-gray-800 p-2 rounded text-2xl mt-2 font-semibold">Please Pay: $<span id="pay-output">1000</span></h3>
+        
+    </form>
+
+    <form class="bg-pink-400 rounded mt-2 p-10 " action="#">
+      <h2 class="text-gray-300 font-semibold mb-4">Type a coupon code to <span class="text-yellow-300">Extra Discount</span></h2>
+
+        <input id="coupon-input" class="rounded p-2 text-black" placeholder="Discount coupon" type="text"> <br>
+
+        <button id="coupon-btn" class="mt-2 btn btn-warning hover:bg-gray-200" disabled>Submit</button>
+    </form>
+    </div>
+  </header>
+
+  <!-- javascript link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>
